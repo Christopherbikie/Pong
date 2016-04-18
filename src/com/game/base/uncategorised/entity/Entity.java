@@ -1,20 +1,22 @@
-package com.game.base.uncategorised;
+package com.game.base.uncategorised.entity;
+
+import com.game.base.uncategorised.Draw;
 
 /**
  *
  * @author Christopher
  */
-public abstract class GameObject
+public abstract class Entity
 {
     protected float x;
     protected float y;
     protected float sx;
     protected float sy;
     
-    abstract void update();
+    public abstract void update();
     public void render()
     {
-        draw.rect(x,y,sx,sy);
+        Draw.rect(x,y,sx,sy);
     }
     
     public float getX()

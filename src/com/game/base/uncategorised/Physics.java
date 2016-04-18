@@ -1,5 +1,7 @@
 package com.game.base.uncategorised;
 
+import com.game.base.uncategorised.entity.Entity;
+
 import java.awt.Rectangle;
 
 /**
@@ -8,7 +10,7 @@ import java.awt.Rectangle;
  */
 public class Physics
 {
-    public static boolean checkCollisions(GameObject go1, GameObject go2)
+    public static boolean checkCollisions(Entity go1, Entity go2)
     {
         Rectangle r1 = new Rectangle((int)go1.getX(),(int)go1.getY(),(int)go1.getSX(),(int)go1.getSY());
         Rectangle r2 = new Rectangle((int)go2.getX(),(int)go2.getY(),(int)go2.getSX(),(int)go2.getSY());

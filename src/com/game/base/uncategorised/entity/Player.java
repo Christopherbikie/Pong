@@ -1,18 +1,20 @@
-package com.game.base.uncategorised;
+package com.game.base.uncategorised.entity;
+
+import com.game.base.uncategorised.Physics;
 
 /**
  *
  * @author Christopher
  */
-public class GOPlayer extends GameObject
+public class Player extends Entity
 {
     public static final int SIZEX = 16;
     public static final int SIZEY = SIZEX * 7;
     public static final float SPEED = 4f;
     
-    private GOBall ball;
+    private Ball ball;
     
-    public GOPlayer(float x, float y, GOBall ball)
+    public Player(float x, float y, Ball ball)
     {
         this.x = x;
         this.y = y;

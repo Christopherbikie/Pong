@@ -1,10 +1,10 @@
-package com.game.base.uncategorised;
+package com.game.base.uncategorised.entity;
 
 /**
  *
  * @author Christopher
  */
-public class GOBall extends GameObject
+public class Ball extends Entity
 {
     public static final int SIZE = 16;
     public static final float MAX_SPEEDX = 6f;
@@ -17,7 +17,7 @@ public class GOBall extends GameObject
     public float startX;
     public float startY;
     
-    public GOBall(float x, float y)
+    public Ball(float x, float y)
     {
         this.x = x;
         this.y = y;

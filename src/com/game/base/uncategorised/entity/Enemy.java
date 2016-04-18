@@ -1,19 +1,21 @@
-package com.game.base.uncategorised;
+package com.game.base.uncategorised.entity;
+
+import com.game.base.uncategorised.Physics;
 
 /**
  *
  * @author Christopher
  */
-public class GOEnemy extends GameObject
+public class Enemy extends Entity
 {
     public static final int SIZEX = 16;
     public static final int SIZEY = SIZEX * 7;
     public static final float MAX_SPEEDY = 4f;
     public static final float DAMPING = 0.05f;
     
-    private GOBall ball;
+    private Ball ball;
     
-    public GOEnemy(float x, float y, GOBall ball)
+    public Enemy(float x, float y, Ball ball)
     {
         this.x = x;
         this.y = y;

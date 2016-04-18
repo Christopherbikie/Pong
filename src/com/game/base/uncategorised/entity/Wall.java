@@ -1,15 +1,17 @@
-package com.game.base.uncategorised;
+package com.game.base.uncategorised.entity;
+
+import com.game.base.uncategorised.Physics;
 
 /**
  *
  * @author Christopher
  */
-public class GOWall extends GameObject
+public class Wall extends Entity
 {
     public static final int STDSIZE = 16;
-    private GOBall ball;
+    private Ball ball;
     
-    public GOWall(float x, float y, float sx, float sy, GOBall ball)
+    public Wall(float x, float y, float sx, float sy, Ball ball)
     {
         this.x = x;
         this.y = y;
